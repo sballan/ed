@@ -1,6 +1,6 @@
 <%= form_with(model: user, local: true) do |form| %>
   <% if user.errors.any? %>
-    <div id="error_explanation">
+    <div id="error_explanation" class="notification is-danger">
       <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
 
       <ul>
@@ -11,22 +11,23 @@
     </div>
   <% end %>
 
+
   <div class="field">
-    <%= form.label :email %>
-    <%= form.text_field :email %>
+    <%= form.label :email, class: 'label' %>
+    <%= form.text_field :email, class: 'input is-rounded' %>
   </div>
 
   <div class="field">
-    <%= form.label :password %>
-    <%= form.password_field :password %>
+    <%= form.label :password, class: 'label' %>
+    <%= form.password_field :password, class: 'input is-rounded'  %>
   </div>
 
   <div class="field">
-    <%= form.label :password_confirmation %>
-    <%= form.password_field :password_confirmation %>
+    <%= form.label :password_confirmation, class: 'label' %>
+    <%= form.password_field :password_confirmation, class: 'input is-rounded'  %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit class: 'button is-info'%>
   </div>
 <% end %>
