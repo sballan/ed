@@ -44,7 +44,7 @@ ActiveRecord::Schema.define(version: 2019_03_23_020641) do
   end
 
   create_table "documents", force: :cascade do |t|
-    t.text "content"
+    t.text "value"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
