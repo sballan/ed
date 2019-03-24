@@ -19,12 +19,12 @@ gem 'bcrypt', '~> 3.1.7'
 # gem 'image_processing', '~> 1.2'
 
 gem 'bootsnap', '>= 1.4.1', require: false
+gem 'bundler', '~> 2'
 
 group :development, :test do
   gem 'dotenv-rails'
   gem 'sqlite3', '~> 1.3', '>= 1.3.6'
   gem 'pry-rails'
-  gem 'bundler', '~> 2'
 end
 
 group :development do

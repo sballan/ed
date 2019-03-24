@@ -17,10 +17,7 @@ FileUtils.chdir APP_ROOT do
   system('bundle check') || system!('bundle install')
 
   # Install JavaScript dependencies
-  system('bin/yarn')
-
-  puts "\n== Webpacker Compile =="
-  system! 'rails webpacker:compile'
+  # system('bin/yarn')
 
   puts "\n== Updating database =="
   system! 'rails db:migrate'
