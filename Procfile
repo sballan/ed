@@ -1,2 +1,2 @@
-web: bundle exec rails server -e production
+web: bundle exec rails server
 release: bundle exec rails db:migrate
