@@ -15,7 +15,7 @@
       <tr>
         <td><%= user.email %></td>
         <td>
-          <%= link_to user, class: "icon has-text-info" do %>
+          <%= link_to user, class: "icon has-text-dark" do %>
             <%# <span class="icon has-text-info"> %>
               <i class="fas fa-info"></i>
             <%# </span> %>
@@ -23,7 +23,7 @@
         </td>
         <td>
           <%= link_to edit_user_path(user) do %>
-            <span class="icon">
+            <span class="icon has-text-dark">
               <i class="fas fa-edit"></i>
             </span>
           <% end %>
@@ -42,4 +42,4 @@
 
 <br>
 
-<%= link_to 'New User', new_user_path, class: "button is-info" %>
+<%= link_to 'New User', new_user_path, class: "button is-dark" %>
