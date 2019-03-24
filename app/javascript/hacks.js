@@ -1,4 +1,9 @@
-// ------- Bulma Burgers -----------
+// ------- Font Awsome (start) -----------
+import '@fortawesome/fontawesome-free/js/all'
+// ------- Font Awsome (end) -----------
+
+
+// ------- Bulma Burgers (start) -----------
 
 // Get bulma burgers to work with built in examples, and with turbolinks
 document.addEventListener("turbolinks:load", function() {
@@ -24,5 +29,5 @@ document.addEventListener("turbolinks:load", function() {
     });
   }
 });
-// ------- Bulma Burgers -----------
+// ------- Bulma Burgers (end) -----------
 
