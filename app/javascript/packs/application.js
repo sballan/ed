@@ -14,3 +14,5 @@ require("@rails/actiontext")
 // Import Fonts here to use webpacker.  We also import styles here in order to process scss in webpacker.  It's gross, but this will be the entrypoint for all of our styles.
 import '@fortawesome/fontawesome-free/js/all'
 import './styles.scss'
+
+import "../hacks"
