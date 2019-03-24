@@ -1,19 +1,21 @@
 <p id="alert"><%= alert %></p>
 
-<h1>Login</h1>
+<h1 class="title">Login</h1>
 
 <%= form_tag sessions_path do |form| %>
   <div class="field">
-    <%= label_tag :email %>
-    <%= text_field_tag :email %>
+    <%= label_tag :email, nil, class: 'label' %>
+    <%= text_field_tag :email, nil, class: 'input is-rounded' %>
   </div>
 
   <div>
-    <%= label_tag :password %>
-    <%= text_field_tag :password %>
+    <%= label_tag :password, nil, class: 'label'  %>
+    <%= text_field_tag :password, nil, class: 'input is-rounded' %>
   </div>
 
+  <br>
+
   <div>
-    <%= submit_tag "Login" %>
+    <%= submit_tag "Login", class: 'button is-dark' %>
   </div>
 <% end %>
